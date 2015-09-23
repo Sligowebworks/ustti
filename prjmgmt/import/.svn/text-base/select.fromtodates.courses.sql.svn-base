@@ -1,0 +1,1 @@
+SELECT DISTINCT trainfrom, trainto from courses WHERE COURSEKEY > 1798 AND trainFROM <> DATE (1900, 01,01)

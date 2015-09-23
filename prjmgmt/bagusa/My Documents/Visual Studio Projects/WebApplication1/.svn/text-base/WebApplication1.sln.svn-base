@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "http://localhost/WebApplication1/WebApplication1.csproj", "{3B89F236-AE7B-41E9-B39F-FACAEC346A2A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3B89F236-AE7B-41E9-B39F-FACAEC346A2A}.Debug.ActiveCfg = Debug|.NET
+		{3B89F236-AE7B-41E9-B39F-FACAEC346A2A}.Debug.Build.0 = Debug|.NET
+		{3B89F236-AE7B-41E9-B39F-FACAEC346A2A}.Release.ActiveCfg = Release|.NET
+		{3B89F236-AE7B-41E9-B39F-FACAEC346A2A}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

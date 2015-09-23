@@ -1,0 +1,92 @@
+ ~ ~ ~ by MZD ~ ~ ~
+ ~ ~ ~ 2007-01-14  ~ ~ ~ 
+ 
+~ ~ ~ What's the Story? ~ ~ ~
+
+ASP.NET can't share state (Session) with old ASP.  We conclude from that that it is impossible to share session state with PHP.
+This leaves two options.  One is to still utilize the php pages and pass state to .net via HTTP requests.  The other is to use the PHP as a spec and rewrite in .net.
+The problem with utilizing the php is that it is misleading and significant rewrite is still required.  The php does not use the SQL database and while a SQL Server adaptor is at hand, the database structures must be updated and possibly the SQL constructor functions.
+So, to rewrite in .net, we need to translate the php to an object model.
+
+The php Web Search app consists of.
+
+A search form, called QueryForm.php, that submits to a disambiguator page or "narrow you search" (disp_Find.php) to warn of non-specific searches that return large results or to allow for browsing for desired search terms.  Also allows for selecting the final output format via links at the top of the page. 
+
+These options represent the other "display" (disp_) pages, disp_courses.php, disp_Status.php, disp_students.php, and disp_students_ext.php (extended).
+Each display page has a similar structure.
+Application overhead is included via app_setup.php.
+
+A SQL SELECT list is declared and static within the page.
+A SQL FROM clause is also declared and static within the page.
+The SQL WHERE clause is constructed of composed functions that check for the presence of a parameter in the application-state object and test for how to concatenate the new clause to the shared WHERE clause string.
+A SQL ORDER BY clause is declared and static within the page.
+
+The separate parts of the query are composed with a function call and then the query is retrieved and placed in an array.
+
+This array is then iterated by row and each column is optionally acted upon for formating, often "Linkify()"-ing -- allowing the selection of the item to narrow the search.
+
+At this point the common page code is executed to render the page chrome and then output the result of the query using the generic function CSSTable()
+
+~ ~ ~
+
+** Functions just described:
+CheckForConstraint(<String (by Ref) WHERE clause to be acted upon>, <String database field qualifier>, <String value>)
+	-- checks that value is not empty and if not, smart-concatenates to the WHERE clause provided.  Also calls SQL injection protection function (ScrubInput()).
+	Variation: CheckForConstraint_2Fields(), takes four arguments, the addition being a second db field to search for the value in
+	Variation CheckForConstraint_Date(), for date values.
+getWithKeyChecks(<Array app state> , <String field qualifier>)
+	-- returns an element from an array but performs a check first and returns an empty string instead of an error if the key is not present.
+
+** Other functions;
+String ScrubInput(<String $input>)
+	-- SQL Injection protection, deletes from the argument SQL Keywords and symbols -- SELECT, INSERT, DELETE, UPDATE, =, ;, \, and --.
+String Linkify(<String $page>, <String $target>, <String $val>)
+	-- uses a string format and returns an html href
+
+~ ~ ~
+
+FROM clauses:
+
+** disp_Find
+	$FromList = 
+	"studcrse " .
+	"INNER JOIN courses on studcrse.COURSEID = courses.COURSEKEY " .
+	"INNER JOIN students on studcrse.APLICANTID = students.APLICANKEY " .
+	"INNER JOIN orient on courses.ORIENTID = orient.ORIENTKEY " .
+	"INNER JOIN country on studcrse.COUNTRYID = country.COUNTRYKEY "
+	;
+** disp_students
+	$FromList = 
+	"students " .
+	"INNER JOIN studcrse on studcrse.APLICANTID = students.APLICANKEY " .
+	"INNER JOIN courses on studcrse.COURSEID = courses.COURSEKEY " .
+	"INNER JOIN orient on courses.ORIENTID = orient.ORIENTKEY " .
+	"INNER JOIN country on students.COUNTRYID = country.COUNTRYKEY "
+	;
+** disp_status
+	$FromList = 
+	"studcrse " .
+	"INNER JOIN courses on studcrse.COURSEID = courses.COURSEKEY " .
+	"INNER JOIN students on studcrse.APLICANTID = students.APLICANKEY " .
+	"INNER JOIN country on studcrse.COUNTRYID = country.COUNTRYKEY "
+	;
+** disp_courses
+	$FromList = 
+	"courses " .
+	"INNER JOIN orient on courses.ORIENTID = orient.ORIENTKEY "
+	;
+
+~ ~ ~
+
+Challenges:
+	- To identify the mapping of the foxpro tables the SQL Server db
+	- To learn how to create a class and reference it in .NET
+	- To solve the issue of the need to decorate the result set or use the built in GridView class for selecting new ID's
+	- To save selected ID's for use in pages other than the Search and Ad-Hoc search (and display them)
+	- To identify the results needed to fulfill searching and ad-hoc reporting
+
+To Do
+	- Determine prevalence of Session.Clear() and ensure that it isn't needed and approp
+	- Determine prevalence of incorrect ID displays and correct them.
+	
+

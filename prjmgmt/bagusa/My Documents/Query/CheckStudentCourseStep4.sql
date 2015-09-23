@@ -1,0 +1,1 @@
+SELECT * FROM studentcourse WHERE applicationid in(25543,25544)

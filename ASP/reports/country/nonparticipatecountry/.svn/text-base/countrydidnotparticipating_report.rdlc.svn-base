@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="usttiConnectionString">
+      <ConnectionProperties>
+        <ConnectString />
+        <DataProvider>SQL</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>706514ca-56b0-4040-9916-6e5784da6235</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>0.5in</BottomMargin>
+  <RightMargin>0.25in</RightMargin>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ColumnSpacing>0.15in</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="total_country_not_apply">
+        <Left>0.25in</Left>
+        <Top>0.75in</Top>
+        <rd:DefaultName>total_country_not_apply</rd:DefaultName>
+        <ZIndex>6</ZIndex>
+        <Width>1.4in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontSize>8pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.2in</Height>
+        <Value>="Total : "+Sum(Fields!total_country_not_apply.Value, "country_report_dataset_TotalCountryNotApply").ToString()</Value>
+      </Textbox>
+      <List Name="list10">
+        <Left>6.25in</Left>
+        <ReportItems>
+          <Textbox Name="countryname_4">
+            <HideDuplicates>country_report_dataset_countrydidnotapplyDataTable5</HideDuplicates>
+            <rd:DefaultName>countryname_4</rd:DefaultName>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=Fields!countryname.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>country_report_dataset_countrydidnotapplyDataTable5</DataSetName>
+        <Top>0.5in</Top>
+        <ZIndex>5</ZIndex>
+        <PageBreakAtEnd>true</PageBreakAtEnd>
+        <Width>1.4in</Width>
+        <Height>0.2in</Height>
+      </List>
+      <List Name="list9">
+        <Left>4.75in</Left>
+        <ReportItems>
+          <Textbox Name="countryname_3">
+            <HideDuplicates>country_report_dataset_countrydidnotapplyDataTable4</HideDuplicates>
+            <rd:DefaultName>countryname_3</rd:DefaultName>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=Fields!countryname.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>country_report_dataset_countrydidnotapplyDataTable4</DataSetName>
+        <Top>0.5in</Top>
+        <ZIndex>4</ZIndex>
+        <PageBreakAtEnd>true</PageBreakAtEnd>
+        <Width>1.4in</Width>
+        <Height>0.2in</Height>
+      </List>
+      <List Name="list7">
+        <Left>3.25in</Left>
+        <ReportItems>
+          <Textbox Name="countryname_2">
+            <HideDuplicates>country_report_dataset_countrydidnotapplyDataTable3</HideDuplicates>
+            <rd:DefaultName>countryname_2</rd:DefaultName>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=Fields!countryname.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>country_report_dataset_countrydidnotapplyDataTable3</DataSetName>
+        <Top>0.5in</Top>
+        <ZIndex>3</ZIndex>
+        <PageBreakAtEnd>true</PageBreakAtEnd>
+        <Width>1.4in</Width>
+        <Height>0.2in</Height>
+      </List>
+      <List Name="list6">
+        <Left>0.25in</Left>
+        <KeepTogether>true</KeepTogether>
+        <ReportItems>
+          <Textbox Name="countryname">
+            <HideDuplicates>country_report_dataset_countrydidnotapplyDataTable1</HideDuplicates>
+            <rd:DefaultName>countryname</rd:DefaultName>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=Fields!countryname.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>country_report_dataset_countrydidnotapplyDataTable1</DataSetName>
+        <Top>0.5in</Top>
+        <ZIndex>2</ZIndex>
+        <PageBreakAtEnd>true</PageBreakAtEnd>
+        <Width>1.4in</Width>
+        <Height>0.2in</Height>
+      </List>
+      <Textbox Name="textbox1">
+        <Top>0.125in</Top>
+        <ZIndex>1</ZIndex>
+        <Width>7.875in</Width>
+        <Style>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontWeight>700</FontWeight>
+          <FontSize>12pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>="Countries Which Did Not Apply in "+ First(Fields!startyear.Value, "country_report_dataset_TotalCountryNotApply")+"-"+First(Fields!endyear.Value, "country_report_dataset_TotalCountryNotApply")</Value>
+      </Textbox>
+      <List Name="list8">
+        <Left>1.75in</Left>
+        <ReportItems>
+          <Textbox Name="countryname_1">
+            <HideDuplicates>country_report_dataset_countrydidnotapplyDataTable2</HideDuplicates>
+            <rd:DefaultName>countryname_1</rd:DefaultName>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=Fields!countryname.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>country_report_dataset_countrydidnotapplyDataTable2</DataSetName>
+        <Top>0.5in</Top>
+        <PageBreakAtEnd>true</PageBreakAtEnd>
+        <Width>1.4in</Width>
+        <Height>0.2in</Height>
+      </List>
+    </ReportItems>
+    <Height>1.25in</Height>
+  </Body>
+  <PageHeader>
+    <ReportItems>
+      <Line Name="line1">
+        <Top>0.25in</Top>
+        <ZIndex>1</ZIndex>
+        <Width>7.875in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+      </Line>
+      <Textbox Name="textbox10">
+        <rd:DefaultName>textbox10</rd:DefaultName>
+        <Width>7.875in</Width>
+        <Style>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontWeight>700</FontWeight>
+          <FontSize>14pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Value>United States Telecommunication Training Institute</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.25in</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+  </PageHeader>
+  <rd:ReportID>c22545a8-442a-4bec-8afb-f5f84047bc99</rd:ReportID>
+  <LeftMargin>0.25in</LeftMargin>
+  <DataSets>
+    <DataSet Name="country_report_dataset_countrydidnotapplyDataTable1">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>country_report_dataset</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>countrydidnotapplyDataTable1TableAdapter</rd:TableAdapterName>
+        <rd:TableName>countrydidnotapplyDataTable1</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT distinct top 50 c.countryid,c.countryname
+FROM country c
+WHERE 
+c.countryid NOT IN
+	(
+		SELECT s.countryid FROM student s,application a
+		WHERE s.studentid=a.studentid AND a.year BETWEEN @startyear AND @endyear
+	)
+ORDER BY countryname ASC</CommandText>
+        <DataSourceName>usttiConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="countryname">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>countryname</DataField>
+        </Field>
+        <Field Name="countryid">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>countryid</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="country_report_dataset_countrydidnotapplyDataTable2">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>country_report_dataset</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>countrydidnotapplyDataTable2TableAdapter</rd:TableAdapterName>
+        <rd:TableName>countrydidnotapplyDataTable2</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT distinct top 50 c.countryid,c.countryname
+FROM country c
+WHERE 
+c.countryid NOT IN
+	(
+		SELECT s.countryid FROM student s,application a
+		WHERE s.studentid=a.studentid AND a.year BETWEEN @startyear AND @endyear
+	)
+AND
+c.countryid NOT IN
+	(
+		SELECT top 50 c.countryid
+		FROM country c
+		WHERE 
+		c.countryid NOT IN
+		(
+			SELECT s.countryid FROM student s,application a
+			WHERE s.studentid=a.studentid AND a.year BETWEEN  @startyear AND                                                 @endyear
+		)
+                              ORDER BY c.countryid
+	)
+ORDER BY c.countryid</CommandText>
+        <DataSourceName>usttiConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="countryname">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>countryname</DataField>
+        </Field>
+        <Field Name="countryid">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>countryid</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="country_report_dataset_countrydidnotapplyDataTable3">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>country_report_dataset</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>countrydidnotapplyDataTable3TableAdapter</rd:TableAdapterName>
+        <rd:TableName>countrydidnotapplyDataTable3</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT distinct top 50 c.countryid,c.countryname
+FROM country c
+WHERE 
+c.countryid NOT IN
+	(
+		SELECT s.countryid FROM student s,application a
+		WHERE s.studentid=a.studentid AND a.year BETWEEN @startyear AND @endyear
+	)
+AND
+c.countryid NOT IN
+	(
+		SELECT top 100 c.countryid
+		FROM country c
+		WHERE 
+		c.countryid NOT IN
+		(
+			SELECT s.countryid FROM student s,application a
+			WHERE s.studentid=a.studentid AND a.year BETWEEN  @startyear AND                                                 @endyear
+		)
+                               ORDER BY c.countryid
+	)
+ORDER BY c.countryid</CommandText>
+        <DataSourceName>usttiConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="countryname">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>countryname</DataField>
+        </Field>
+        <Field Name="countryid">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>countryid</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="country_report_dataset_countrydidnotapplyDataTable4">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>country_report_dataset</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>countrydidnotapplyDataTable4TableAdapter</rd:TableAdapterName>
+        <rd:TableName>countrydidnotapplyDataTable4</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT distinct top 50 c.countryid,c.countryname
+FROM country c
+WHERE 
+c.countryid NOT IN
+	(
+		SELECT s.countryid FROM student s,application a
+		WHERE s.studentid=a.studentid AND a.year BETWEEN @startyear AND @endyear
+	)
+AND
+c.countryid NOT IN
+	(
+		SELECT top 150 c.countryid
+		FROM country c
+		WHERE 
+		c.countryid NOT IN
+		(
+			SELECT s.countryid FROM student s,application a
+			WHERE s.studentid=a.studentid AND a.year BETWEEN  @startyear AND                                                 @endyear
+		)
+                               ORDER BY  c.countryid
+	)
+ORDER BY c.countryid</CommandText>
+        <DataSourceName>usttiConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="countryname">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>countryname</DataField>
+        </Field>
+        <Field Name="countryid">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>countryid</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="country_report_dataset_countrydidnotapplyDataTable5">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>country_report_dataset</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>countrydidnotapplyDataTable5TableAdapter</rd:TableAdapterName>
+        <rd:TableName>countrydidnotapplyDataTable5</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT distinct top 50 c.countryid,c.countryname
+FROM country c
+WHERE 
+c.countryid NOT IN
+	(
+		SELECT s.countryid FROM student s,application a
+		WHERE s.studentid=a.studentid AND a.year BETWEEN @startyear AND @endyear
+	)
+AND
+c.countryid NOT IN
+	(
+		SELECT top 200 c.countryid
+		FROM country c
+		WHERE 
+		c.countryid NOT IN
+		(
+			SELECT s.countryid FROM student s,application a
+			WHERE s.studentid=a.studentid AND a.year BETWEEN  @startyear AND                                                 @endyear
+		)
+                               ORDER BY c.countryid
+	)
+ORDER BY c.countryid</CommandText>
+        <DataSourceName>usttiConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="countryname">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>countryname</DataField>
+        </Field>
+        <Field Name="countryid">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>countryid</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="country_report_dataset_TotalCountryNotApply">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>country_report_dataset</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>TotalCountryNotApplyTableAdapter</rd:TableAdapterName>
+        <rd:TableName>TotalCountryNotApply</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT count(distinct c.countryname) as total_country_not_apply,@startyear as startyear,@endyear as endyear
+FROM country c
+WHERE 
+c.countryid NOT IN
+	(
+		SELECT s.countryid FROM student s,application a
+		WHERE s.studentid=a.studentid AND a.year BETWEEN @startyear AND @endyear
+	)
+</CommandText>
+        <DataSourceName>usttiConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="total_country_not_apply">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>total_country_not_apply</DataField>
+        </Field>
+        <Field Name="startyear">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>startyear</DataField>
+        </Field>
+        <Field Name="endyear">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>endyear</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Code />
+  <Width>8.625in</Width>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <Language>en-US</Language>
+  <PageFooter>
+    <ReportItems>
+      <Textbox Name="textbox2">
+        <Left>6.625in</Left>
+        <rd:DefaultName>textbox2</rd:DefaultName>
+        <Width>1.125in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontSize>12pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Value>="Page "+Globals!PageNumber.ToString() +" of "+Globals!TotalPages.ToString() +" Pages"</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.25in</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+  </PageFooter>
+  <TopMargin>0.5in</TopMargin>
+</Report>

@@ -1,0 +1,1 @@
+SELECT * FROM application WHERE applicationid in(25353,25354)

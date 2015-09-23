@@ -1,0 +1,334 @@
+body
+{
+	margin:0;
+	padding:1px
+	
+	 
+}	
+td.header_border_top
+{
+    
+    vertical-align:top}
+td.nav_right
+{
+     vertical-align:top;
+	 border-right:1px solid #808080;
+	 border-top: 1px solid #808080;
+	 background-color:#EFEFEF;
+	 padding-top:2mm ;
+	 padding-bottom:2mm;
+	 padding-left:0;
+	 padding-right:0;
+	 width:220
+	 
+	 
+}	
+table.top_nav_bar
+{
+    font:11px verdana;
+    margin-left:1cm;
+    padding:0;
+    border:0;
+   
+    
+}
+td.top_nav_bar
+{
+    vertical-align:middle;
+    width:100px
+}  
+td.footer
+{ 
+    text-align:right;
+    padding:1mm;
+    color:#ffffff;   
+    font:11px trebuchet MS;
+    height:75px;
+    vertical-align:top
+    
+    }
+td.content_text
+{
+    font:  11px trebuchet MS;
+    border-top: 1px solid #808080;
+    background-color:#FFFFFF
+}
+td.top_bar_right
+{
+    font:  11px trebuchet MS;
+    background-color:#CAD3DC;
+    text-align:left;
+    vertical-align:middle
+    
+}
+td.top_bar
+{
+    font:  11px trebuchet MS;
+    background-color:ButtonFace;
+    border-top:1px solid #808080;
+    border-bottom:1px solid #808080
+}
+td.top_bar_left
+{
+    font:  11px trebuchet MS;
+    background-color:#CAD3DC;
+    
+}
+table.expand
+{
+    width:100%;
+    height:100%;
+    padding:0px;
+}
+table.date_entry
+{   
+   
+    width:250;
+    border:0;
+    font: 11px trebuchet ms;
+    padding:0
+    }
+table.data_entry_form
+{
+    font: 11px trebuchet ms;
+    margin-left: 1cm;
+    margin-top: 0.5cm;
+    border:1px solid #808080;
+    width:90%
+    }
+table.data_detail_view
+{
+    font: 11px trebuchet ms;
+    padding:5mm;
+    margin-left: 1cm;
+    margin-top: 0.5cm;
+    border:1px solid #808080;
+    width:95%
+    }
+table.sub_page_entry_form
+{
+    font: 11px trebuchet ms;
+    border:1px solid #808080;
+    width:100%
+    
+}
+div.footer
+{
+    text-align:center;
+    font: 11px trebuchet ms;
+}	
+div.page_title
+{
+    text-align:left;
+    padding:1mm;
+    margin-left:1cm;
+    margin-top:0.3cm;
+    font: bold 14px verdana;
+    border-bottom:1px solid #808080
+    width:95%
+}	
+div.page_sub_title
+{
+    text-align:left;
+    padding:1mm;
+    margin-left:1cm;
+    margin-top:0.5cm;
+    font: bold 13px verdana;
+    width:95%
+}
+div.page_content
+{
+    text-align:left;
+    padding:1mm;
+    margin-top:1em;
+    margin-left:1cm;
+    font: 12px trebuchet ms;
+    width:95%
+}	
+div.report_bar_left_top
+{
+    height:31px;
+    width:100%;
+    border-bottom:1px solid #808080;
+    background-color:ButtonFace 
+}	
+td.nav_level_1
+{
+     width:100px;
+  	 font:  11px trebuchet MS;
+  	 text-align:center;
+}	
+td.entry_form_field
+{
+     width:100px;
+  	 font:  11px trebuchet MS;
+  	 text-align:left;
+}	
+td.login
+{
+     width:100px;
+  	 font:  11px trebuchet MS;
+  	 vertical-align:middle
+  	 
+  	 
+}
+td.entry_form_header
+{
+     font:  12px trebuchet MS;
+     font-style:italic;
+     font-weight:bold;
+  	 text-align:left;
+  	 border-bottom: 1px solid #808080;
+  	 background-color:#EFEFEF;
+}
+table.entry_form_detail
+{    
+    
+     font:  11px trebuchet MS;
+     text-align:left;
+     width:500px
+}
+table.entry_form_detail2
+{    
+    
+     font:  11px trebuchet MS;
+     text-align:left;
+     width:600px
+}
+table.subpage_form_detail
+{    
+     font:  11px trebuchet MS;
+     text-align:left;
+     width:500px
+}
+div.gridview
+{
+    font: 11px trebuchet ms;
+    margin-left: 1cm;
+    margin-top: 0.5cm;
+    margin-bottom:1cm;
+    
+}	
+div.sitemap
+{
+    margin-left: 1cm;
+    margin-top: 0.4cm;
+    margin-bottom:0cm
+}	
+div.login
+{
+    font: 11px trebuchet ms;
+    margin-left: 1cm;
+    margin-top: 1cm;
+    vertical-align:middle
+}
+div.search_record
+{
+    font: 11px trebuchet ms;
+    margin-left: 1cm;
+    margin-top:0.5cm;
+}
+div.search_record_segment
+{
+    font: 11px trebuchet ms;
+    padding:1mm
+    
+}
+div.search_record_segment2
+{
+    font: 11px trebuchet ms;
+    padding:1mm;
+    margin-left: 5cm
+}
+div.menu_header
+{
+    font: 11px verdana;
+    font-weight:bold;
+    width:200px;
+    margin-left:0;
+    padding-left:1mm;
+    padding-bottom:1mm;
+    padding-top:2mm;
+}
+div.menu_content
+{
+    font: 11px verdana;
+    width:180px;
+    margin-left: 3mm;
+    padding-left:1mm;
+    padding-bottom:1mm;
+    padding-top:1mm;
+}
+div.menu_student
+{
+    font: 11px verdana;
+    width:900px;
+    margin-left: 3mm;
+    padding-left:1mm;
+    padding-bottom:1mm;
+    padding-top:1mm;
+}
+div.menu_reports
+{
+    font: 11px verdana;
+    width:700px;
+    margin-left: 3mm;
+    padding-left:1mm;
+    padding-bottom:1mm;
+    padding-top:1mm;
+}
+h1
+{
+    font: bold 11px verdana;
+}
+a.mainlink:link
+{
+   font-style:normal;
+   text-decoration:none;
+   color:Black
+   
+}
+a.mainlink:visited
+{
+    font-style:normal;
+    text-decoration:none;
+    color:black
+}
+a.mainlink:hover
+{
+    color:#4D6D8A;
+    text-decoration:none
+}
+a.sublink:link
+{
+   font-style:italic;
+   text-decoration:none;
+   color:Black
+}
+a.sublink:visited
+{
+    font-style:italic;
+    text-decoration:none;
+    color:black
+}
+a.sublink:hover
+{
+    color:#4D6D8A;
+    text-decoration:none
+}
+a.sublink2:link
+{
+   font-style:normal;
+   font-size:11px;
+   font-family:Verdana;
+   text-decoration:underline;
+   color:Black
+}
+a.sublink2:visited
+{
+    font-style:normal;
+    font-family:Verdana;
+    font-size:11px;
+    text-decoration:underline;
+    color:black
+}

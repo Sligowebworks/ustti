@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Web Developer Express 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\...\USTTI\", "..\..\..\Visual Studio Projects\USTTI\", "{39100E79-0529-48CE-88E0-758C5AC0DBC1}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/USTTI"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\Visual Studio Projects\USTTI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\USTTI\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/USTTI"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\Visual Studio Projects\USTTI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\USTTI\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1846"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39100E79-0529-48CE-88E0-758C5AC0DBC1}.Debug|.NET.ActiveCfg = Debug|.NET
+		{39100E79-0529-48CE-88E0-758C5AC0DBC1}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

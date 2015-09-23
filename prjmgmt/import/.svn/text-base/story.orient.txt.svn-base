@@ -1,0 +1,16 @@
+
+First step is to select the distinct record set of orientation date ranges from the courses table.
+Output that to a csv?
+Yes, then iterate, start with the last orientation key and insert new rows as done for courses.
+Then update with a join between orient and courses to set the orientID of course.
+
+~~~
+Step One:
+Select Distinct TrainFrom, TrainTo from Courses WHERE ID > X
+Get File Specification for writing.
+Declare output format
+Instance RecordSet
+Execute SQL
+Get Array result
+Iterate and dump to file.
+

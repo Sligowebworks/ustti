@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="usttiConnectionString">
+      <ConnectionProperties>
+        <ConnectString />
+        <DataProvider>SQL</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>3b2ad7c1-9ec3-42ac-8b9f-e2ef529bf9f8</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>5mm</BottomMargin>
+  <RightMargin>10mm</RightMargin>
+  <PageWidth>210mm</PageWidth>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:GridSpacing>0.1in</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ReportItems>
+      <Textbox Name="textbox19">
+        <Left>0.2in</Left>
+        <Top>0.4in</Top>
+        <rd:DefaultName>textbox19</rd:DefaultName>
+        <ZIndex>25</ZIndex>
+        <Width>7.1in</Width>
+        <Style>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontWeight>700</FontWeight>
+          <FontSize>12pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.19792in</Height>
+        <Value>All Year</Value>
+      </Textbox>
+      <Textbox Name="textbox18">
+        <Left>0.2in</Left>
+        <Top>2.7in</Top>
+        <rd:DefaultName>textbox18</rd:DefaultName>
+        <ZIndex>24</ZIndex>
+        <Width>7.2in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontSize>12pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <Height>0.25in</Height>
+        <Value>="Report Date : " +Globals!ExecutionTime</Value>
+      </Textbox>
+      <Textbox Name="textbox17">
+        <Left>6.1in</Left>
+        <Top>2.2in</Top>
+        <ZIndex>23</ZIndex>
+        <Width>0.7in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <Height>0.25in</Height>
+        <Value>=Sum(Fields!graduate_num.Value, "coursebysponsor_graduatenumDataAdapterAllYear")</Value>
+      </Textbox>
+      <Textbox Name="textbox16">
+        <Left>5.3in</Left>
+        <Top>2.2in</Top>
+        <ZIndex>22</ZIndex>
+        <Width>0.5in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <Height>0.25in</Height>
+        <Value>=Sum(Fields!applicant_num.Value, "coursebysponsor_applicantnumDataAdapterAllYear")</Value>
+      </Textbox>
+      <Textbox Name="textbox15">
+        <Left>4.5in</Left>
+        <Top>2.2in</Top>
+        <rd:DefaultName>textbox15</rd:DefaultName>
+        <ZIndex>21</ZIndex>
+        <Width>0.4in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <Height>0.25in</Height>
+        <Value>=Sum(Fields!slots.Value, "coursebysponsor_coursesinfoDataAdapterAllYear")</Value>
+      </Textbox>
+      <Textbox Name="textbox14">
+        <Left>1.35in</Left>
+        <Top>2.2in</Top>
+        <rd:DefaultName>textbox14</rd:DefaultName>
+        <ZIndex>20</ZIndex>
+        <Width>0.75in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <Height>0.2in</Height>
+        <Value>=COUNT(Fields!courseid.Value, "coursebysponsor_coursesinfoDataAdapterAllYear")</Value>
+      </Textbox>
+      <Textbox Name="sponsname">
+        <Left>0.2in</Left>
+        <Top>0.1in</Top>
+        <rd:DefaultName>sponsname</rd:DefaultName>
+        <ZIndex>19</ZIndex>
+        <Width>7.1in</Width>
+        <Style>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontWeight>700</FontWeight>
+          <FontSize>12pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>="Course Sponsored By "+TRIM(First(Fields!sponsname.Value, "coursebysponsor_coursesinfoDataAdapterAllYear"))</Value>
+      </Textbox>
+      <Textbox Name="textbox13">
+        <Left>0.2in</Left>
+        <Top>2in</Top>
+        <rd:DefaultName>textbox13</rd:DefaultName>
+        <ZIndex>18</ZIndex>
+        <Width>0.75in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <Height>0.2in</Height>
+        <Value>Total</Value>
+      </Textbox>
+      <Textbox Name="textbox12">
+        <Left>5.8in</Left>
+        <Top>2in</Top>
+        <ZIndex>17</ZIndex>
+        <Width>1in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <Height>0.2in</Height>
+        <Value>Graduates</Value>
+      </Textbox>
+      <Textbox Name="textbox11">
+        <Left>5.1in</Left>
+        <Top>2in</Top>
+        <ZIndex>16</ZIndex>
+        <Width>0.7in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <Height>0.2in</Height>
+        <Value>Applicants</Value>
+      </Textbox>
+      <Textbox Name="textbox9">
+        <Left>4.4in</Left>
+        <Top>2in</Top>
+        <ZIndex>15</ZIndex>
+        <Width>0.7in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <Height>0.2in</Height>
+        <Value>Slots</Value>
+      </Textbox>
+      <Textbox Name="textbox8">
+        <Left>1.1in</Left>
+        <Top>2in</Top>
+        <ZIndex>14</ZIndex>
+        <Width>1in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <Height>0.2in</Height>
+        <Value>Course</Value>
+      </Textbox>
+      <Line Name="line4">
+        <Left>7.4in</Left>
+        <Top>1.9in</Top>
+        <ZIndex>13</ZIndex>
+        <Width>-7.2in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0in</Height>
+      </Line>
+      <Line Name="line3">
+        <Left>7.4in</Left>
+        <Top>1.2in</Top>
+        <ZIndex>12</ZIndex>
+        <Width>-7.2in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0in</Height>
+      </Line>
+      <List Name="list5">
+        <Left>1.1in</Left>
+        <KeepTogether>true</KeepTogether>
+        <ReportItems>
+          <Textbox Name="trainfrom">
+            <rd:DefaultName>trainfrom</rd:DefaultName>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>Times New Roman</FontFamily>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=Fields!trainfrom.Value+" - "+Fields!trainto.Value+vbcrlf+Fields!crsetitle1.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>coursebysponsor_coursesinfoDataAdapterAllYear</DataSetName>
+        <Top>1.3in</Top>
+        <ZIndex>11</ZIndex>
+        <Width>3.2in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+        </Style>
+        <Height>0.5in</Height>
+      </List>
+      <List Name="list7">
+        <Left>4.4in</Left>
+        <KeepTogether>true</KeepTogether>
+        <ReportItems>
+          <Textbox Name="slots">
+            <Left>0.1in</Left>
+            <rd:DefaultName>slots</rd:DefaultName>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>Times New Roman</FontFamily>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>=Fields!slots.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>coursebysponsor_coursesinfoDataAdapterAllYear</DataSetName>
+        <Top>1.3in</Top>
+        <ZIndex>10</ZIndex>
+        <Width>0.6in</Width>
+        <Height>0.5in</Height>
+      </List>
+      <List Name="list4">
+        <Left>6.6in</Left>
+        <KeepTogether>true</KeepTogether>
+        <ReportItems>
+          <Textbox Name="country_num">
+            <Left>0.3in</Left>
+            <rd:DefaultName>country_num</rd:DefaultName>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>Times New Roman</FontFamily>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>=Fields!country_num.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>coursebysponsor_countrynumDataAdapterAllYear</DataSetName>
+        <Top>1.3in</Top>
+        <ZIndex>9</ZIndex>
+        <Width>0.8in</Width>
+        <Style>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontSize>12pt</FontSize>
+        </Style>
+        <Height>0.5in</Height>
+      </List>
+      <List Name="list3">
+        <Left>5.8in</Left>
+        <KeepTogether>true</KeepTogether>
+        <ReportItems>
+          <Textbox Name="graduate_num">
+            <Left>0.3in</Left>
+            <rd:DefaultName>graduate_num</rd:DefaultName>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>Times New Roman</FontFamily>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>=Fields!graduate_num.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>coursebysponsor_graduatenumDataAdapterAllYear</DataSetName>
+        <Top>1.3in</Top>
+        <ZIndex>8</ZIndex>
+        <Width>0.8in</Width>
+        <Style>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontSize>12pt</FontSize>
+        </Style>
+        <Height>0.5in</Height>
+      </List>
+      <List Name="list2">
+        <Left>5in</Left>
+        <KeepTogether>true</KeepTogether>
+        <ReportItems>
+          <Textbox Name="applicant_num">
+            <Left>0.3in</Left>
+            <rd:DefaultName>applicant_num</rd:DefaultName>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>Times New Roman</FontFamily>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>=Fields!applicant_num.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>coursebysponsor_applicantnumDataAdapterAllYear</DataSetName>
+        <Top>1.3in</Top>
+        <ZIndex>7</ZIndex>
+        <Width>0.7in</Width>
+        <Style>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontSize>12pt</FontSize>
+        </Style>
+        <Height>0.5in</Height>
+      </List>
+      <Textbox Name="textbox7">
+        <Left>6.6in</Left>
+        <Top>0.8in</Top>
+        <ZIndex>6</ZIndex>
+        <Width>0.8in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>Countries</Value>
+      </Textbox>
+      <Textbox Name="textbox6">
+        <Left>5.8in</Left>
+        <Top>0.8in</Top>
+        <ZIndex>5</ZIndex>
+        <Width>0.8in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>Graduates</Value>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <Left>5in</Left>
+        <Top>0.8in</Top>
+        <ZIndex>4</ZIndex>
+        <Width>0.8in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>Applicants</Value>
+      </Textbox>
+      <Textbox Name="textbox4">
+        <Left>4.4in</Left>
+        <Top>0.8in</Top>
+        <ZIndex>3</ZIndex>
+        <Width>0.6in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>Slot</Value>
+      </Textbox>
+      <Textbox Name="textbox3">
+        <Left>1.1in</Left>
+        <Top>0.8in</Top>
+        <rd:DefaultName>textbox3</rd:DefaultName>
+        <ZIndex>2</ZIndex>
+        <Width>1in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>Training Title</Value>
+      </Textbox>
+      <Textbox Name="textbox1">
+        <Left>0.3in</Left>
+        <Top>0.8in</Top>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <ZIndex>1</ZIndex>
+        <Width>0.65in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>Crse ID</Value>
+      </Textbox>
+      <List Name="list1">
+        <Left>0.25in</Left>
+        <KeepTogether>true</KeepTogether>
+        <ReportItems>
+          <Textbox Name="courseid">
+            <rd:DefaultName>courseid</rd:DefaultName>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>Times New Roman</FontFamily>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>=Fields!courseid.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>coursebysponsor_coursesinfoDataAdapterAllYear</DataSetName>
+        <Top>1.3in</Top>
+        <Width>0.7in</Width>
+        <Style>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontSize>12pt</FontSize>
+        </Style>
+        <Height>0.5in</Height>
+      </List>
+    </ReportItems>
+    <Height>272mm</Height>
+  </Body>
+  <PageHeader>
+    <ReportItems>
+      <Textbox Name="textbox10">
+        <Left>0.2in</Left>
+        <rd:DefaultName>textbox10</rd:DefaultName>
+        <Width>7.1in</Width>
+        <Style>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontWeight>700</FontWeight>
+          <FontSize>14pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>United States Telecommunications Training Institute</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>7.5mm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+  </PageHeader>
+  <rd:ReportID>8643573a-7488-4e72-b1e4-1fc4e16d2571</rd:ReportID>
+  <LeftMargin>10mm</LeftMargin>
+  <DataSets>
+    <DataSet Name="coursebysponsor_coursesinfoDataAdapterAllYear">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>coursebysponsor</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>coursesinfoDataAdapterAllYearTableAdapter</rd:TableAdapterName>
+        <rd:TableName>coursesinfoDataAdapterAllYear</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT distinct sc.courseid,c.crsetitle1,c.slots,CONVERT(VARCHAR(6),c.trainfrom,107) as trainfrom, CONVERT(VARCHAR(12),c.trainto,107) as trainto,sp.sponsname FROM courses c,studentcourse sc,sponsors sp WHERE sc.courseid=c.courseid AND sp.sponsid=c.prisponsid AND c.prisponsid=@sponsorid ORDER BY sc.courseid</CommandText>
+        <DataSourceName>usttiConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="courseid">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>courseid</DataField>
+        </Field>
+        <Field Name="crsetitle1">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>crsetitle1</DataField>
+        </Field>
+        <Field Name="slots">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>slots</DataField>
+        </Field>
+        <Field Name="trainfrom">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>trainfrom</DataField>
+        </Field>
+        <Field Name="trainto">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>trainto</DataField>
+        </Field>
+        <Field Name="sponsname">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>sponsname</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="coursebysponsor_applicantnumDataAdapterAllYear">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>coursebysponsor</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>applicantnumDataAdapterAllYearTableAdapter</rd:TableAdapterName>
+        <rd:TableName>applicantnumDataAdapterAllYear</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT sc.courseid,count(sc.studentid) as applicant_num FROM studentcourse sc,courses c
+WHERE sc.courseid=c.courseid AND c.prisponsid=@sponsorid GROUP BY sc.courseid ORDER BY sc.courseid</CommandText>
+        <DataSourceName>usttiConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="courseid">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>courseid</DataField>
+        </Field>
+        <Field Name="applicant_num">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>applicant_num</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="coursebysponsor_graduatenumDataAdapterAllYear">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>coursebysponsor</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>graduatenumDataAdapterAllYearTableAdapter</rd:TableAdapterName>
+        <rd:TableName>graduatenumDataAdapterAllYear</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT sc.courseid,count(sc.studentid) as graduate_num FROM studentcourse sc,courses c
+WHERE sc.courseid=c.courseid AND c.prisponsid=@sponsorid AND sc.participat='Yes'
+GROUP BY sc.courseid ORDER BY sc.courseid</CommandText>
+        <DataSourceName>usttiConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="courseid">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>courseid</DataField>
+        </Field>
+        <Field Name="graduate_num">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>graduate_num</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="coursebysponsor_countrynumDataAdapterAllYear">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>coursebysponsor</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>countrynumDataAdapterAllYearTableAdapter</rd:TableAdapterName>
+        <rd:TableName>countrynumDataAdapterAllYear</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT sc.courseid,count(distinct s.countryid) as country_num 
+FROM studentcourse sc,courses c,student s
+WHERE sc.courseid=c.courseid AND  c.prisponsid=@sponsorid 
+AND s.studentid=sc.studentid AND sc.participat='Yes'
+GROUP BY sc.courseid ORDER BY sc.courseid</CommandText>
+        <DataSourceName>usttiConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="courseid">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>courseid</DataField>
+        </Field>
+        <Field Name="country_num">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>country_num</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Code />
+  <Width>190mm</Width>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <Language>en-US</Language>
+  <PageFooter>
+    <ReportItems>
+      <Line Name="line1">
+        <Left>7.4in</Left>
+        <ZIndex>1</ZIndex>
+        <Width>-7.29167in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0in</Height>
+      </Line>
+      <Textbox Name="textbox2">
+        <Left>5in</Left>
+        <rd:DefaultName>textbox2</rd:DefaultName>
+        <Width>2in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontSize>12pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>="Page "+Globals!PageNumber.ToString() +" of "+Globals!TotalPages.ToString() +" Pages"</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>7.5mm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+  </PageFooter>
+  <TopMargin>5mm</TopMargin>
+  <PageHeight>297mm</PageHeight>
+</Report>

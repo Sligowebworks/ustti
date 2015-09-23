@@ -1,0 +1,4 @@
+SELECT * FROM courses 
+INNER JOIN orient on courses.trainfrom = orient.from 
+AND courses.trainto = orient.to
+WHERE coursekey > 1798;      

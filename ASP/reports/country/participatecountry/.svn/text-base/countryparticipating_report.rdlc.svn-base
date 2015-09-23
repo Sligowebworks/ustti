@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="usttiConnectionString">
+      <ConnectionProperties>
+        <ConnectString />
+        <DataProvider>SQL</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>706514ca-56b0-4040-9916-6e5784da6235</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>7.5mm</BottomMargin>
+  <RightMargin>10mm</RightMargin>
+  <PageWidth>210mm</PageWidth>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ReportItems>
+      <Textbox Name="country_participat_6">
+        <Left>0.125in</Left>
+        <Top>1in</Top>
+        <rd:DefaultName>country_participat_6</rd:DefaultName>
+        <ZIndex>7</ZIndex>
+        <Width>1.4in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontSize>8pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.2in</Height>
+        <Value>="Total : "+Sum(Fields!country_participat.Value, "country_report_dataset_TotalCountryParticipant").ToString()</Value>
+      </Textbox>
+      <List Name="list6">
+        <Left>0.125in</Left>
+        <ReportItems>
+          <Textbox Name="country_participat_5">
+            <rd:DefaultName>country_participat_5</rd:DefaultName>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=Fields!country_participat.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>country_report_dataset_countryparticipateDataTable6</DataSetName>
+        <Top>0.75in</Top>
+        <ZIndex>6</ZIndex>
+        <Width>1.4in</Width>
+        <Height>0.2in</Height>
+      </List>
+      <List Name="list5">
+        <Left>6.125in</Left>
+        <ReportItems>
+          <Textbox Name="country_participat_4">
+            <rd:DefaultName>country_participat_4</rd:DefaultName>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=Fields!country_participat.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>country_report_dataset_countryparticipateDataTable5</DataSetName>
+        <Top>0.5in</Top>
+        <ZIndex>5</ZIndex>
+        <Width>1.25in</Width>
+        <Height>0.2in</Height>
+      </List>
+      <List Name="list4">
+        <Left>4.625in</Left>
+        <ReportItems>
+          <Textbox Name="country_participat_3">
+            <rd:DefaultName>country_participat_3</rd:DefaultName>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=Fields!country_participat.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>country_report_dataset_countryparticipateDataTable4</DataSetName>
+        <Top>0.5in</Top>
+        <ZIndex>4</ZIndex>
+        <Width>1.4in</Width>
+        <Height>0.2in</Height>
+      </List>
+      <List Name="list3">
+        <Left>3.125in</Left>
+        <ReportItems>
+          <Textbox Name="country_participat_2">
+            <rd:DefaultName>country_participat_2</rd:DefaultName>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=Fields!country_participat.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>country_report_dataset_countryparticipateDataTable3</DataSetName>
+        <Top>0.5in</Top>
+        <ZIndex>3</ZIndex>
+        <Width>1.4in</Width>
+        <Height>0.2in</Height>
+      </List>
+      <List Name="list2">
+        <Left>1.625in</Left>
+        <ReportItems>
+          <Textbox Name="country_participat_1">
+            <rd:DefaultName>country_participat_1</rd:DefaultName>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=Fields!country_participat.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>country_report_dataset_countryparticipateDataTable2</DataSetName>
+        <Top>0.5in</Top>
+        <ZIndex>2</ZIndex>
+        <Width>1.4in</Width>
+        <Height>0.2in</Height>
+      </List>
+      <List Name="list1">
+        <Left>0.125in</Left>
+        <ReportItems>
+          <Textbox Name="country_participat">
+            <rd:DefaultName>country_participat</rd:DefaultName>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Value>=Fields!country_participat.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>country_report_dataset_countryparticipateDataTable1</DataSetName>
+        <Top>0.5in</Top>
+        <ZIndex>1</ZIndex>
+        <Width>1.4in</Width>
+        <Height>0.2in</Height>
+      </List>
+      <Textbox Name="endyear">
+        <Left>0.125in</Left>
+        <Top>0.125in</Top>
+        <rd:DefaultName>endyear</rd:DefaultName>
+        <Width>7.25in</Width>
+        <Style>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Times New Roman</FontFamily>
+          <FontWeight>700</FontWeight>
+          <FontSize>12pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>="Country Participating "+First(Fields!startyear.Value, "country_report_dataset_TotalCountryParticipant")+"-"+First(Fields!endyear.Value, "country_report_dataset_TotalCountryParticipant")</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>272mm</Height>
+  </Body>
+  <PageHeader>
+    <ReportItems>
+      <Line Name="line1">
+        <Left>0.25in</Left>
+        <Top>0.25in</Top>
+        <ZIndex>1</ZIndex>
+        <Width>7.125in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0in</Height>
+      </Line>
+      <Textbox Name="textbox10">
+        <Left>0.25in</Left>
+        <rd:DefaultName>textbox10</rd:DefaultName>
+        <Width>7.125in</Width>
+        <Style>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontWeight>700</FontWeight>
+          <FontSize>14pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>United States Telecommunication Training Institute</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>9.52381mm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+  </PageHeader>
+  <rd:ReportID>c22545a8-442a-4bec-8afb-f5f84047bc99</rd:ReportID>
+  <LeftMargin>10mm</LeftMargin>
+  <DataSets>
+    <DataSet Name="country_report_dataset_countryparticipateDataTable1">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>country_report_dataset</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>countryparticipateDataTable1TableAdapter</rd:TableAdapterName>
+        <rd:TableName>countryparticipateDataTable1</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT distinct top 40 c.countryname as country_participat
+FROM student s,studentcourse sc,country c,application a
+WHERE s.studentid=sc.studentid
+AND c.countryid=s.countryid
+AND sc.participat='Yes' 
+AND a.year between @startyear AND @endyear</CommandText>
+        <DataSourceName>usttiConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="country_participat">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>country_participat</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="country_report_dataset_countryparticipateDataTable2">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>country_report_dataset</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>countryparticipateDataTable2TableAdapter</rd:TableAdapterName>
+        <rd:TableName>countryparticipateDataTable2</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT distinct top 40 c.countryname as country_participat
+FROM student s,studentcourse sc,country c,application a
+WHERE s.studentid=sc.studentid
+AND c.countryid=s.countryid
+AND sc.participat='Yes' 
+AND a.year between @startyear AND @endyear
+AND countryname NOT IN
+ (
+SELECT distinct top 40 c.countryname as country_participat
+FROM student s,studentcourse sc,country c,application a
+WHERE s.studentid=sc.studentid
+AND c.countryid=s.countryid
+AND sc.participat='Yes' 
+AND a.year between @startyear AND @endyear
+)</CommandText>
+        <DataSourceName>usttiConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="country_participat">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>country_participat</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="country_report_dataset_countryparticipateDataTable3">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>country_report_dataset</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>countryparticipateDataTable3TableAdapter</rd:TableAdapterName>
+        <rd:TableName>countryparticipateDataTable3</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT distinct top 40 c.countryname as country_participat
+FROM student s,studentcourse sc,country c,application a
+WHERE s.studentid=sc.studentid
+AND c.countryid=s.countryid
+AND sc.participat='Yes' 
+AND a.year between @startyear AND @endyear
+AND countryname NOT IN
+ (
+SELECT distinct top 80 c.countryname as country_participat
+FROM student s,studentcourse sc,country c,application a
+WHERE s.studentid=sc.studentid
+AND c.countryid=s.countryid
+AND sc.participat='Yes' 
+AND a.year between @startyear AND @endyear
+)</CommandText>
+        <DataSourceName>usttiConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="country_participat">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>country_participat</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="country_report_dataset_countryparticipateDataTable4">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>country_report_dataset</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>countryparticipateDataTable4TableAdapter</rd:TableAdapterName>
+        <rd:TableName>countryparticipateDataTable4</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT distinct top 40 c.countryname as country_participat
+FROM student s,studentcourse sc,country c,application a
+WHERE s.studentid=sc.studentid
+AND c.countryid=s.countryid
+AND sc.participat='Yes' 
+AND a.year between @startyear AND @endyear
+AND countryname NOT IN
+ (
+SELECT distinct top 120 c.countryname as country_participat
+FROM student s,studentcourse sc,country c,application a
+WHERE s.studentid=sc.studentid
+AND c.countryid=s.countryid
+AND sc.participat='Yes' 
+AND a.year between @startyear AND @endyear
+)</CommandText>
+        <DataSourceName>usttiConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="country_participat">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>country_participat</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="country_report_dataset_countryparticipateDataTable5">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>country_report_dataset</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>countryparticipateDataTable5TableAdapter</rd:TableAdapterName>
+        <rd:TableName>countryparticipateDataTable5</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT distinct top 40 c.countryname as country_participat
+FROM student s,studentcourse sc,country c,application a
+WHERE s.studentid=sc.studentid
+AND c.countryid=s.countryid
+AND sc.participat='Yes' 
+AND a.year between @startyear AND @endyear
+AND countryname NOT IN
+ (
+SELECT distinct top 160 c.countryname as country_participat
+FROM student s,studentcourse sc,country c,application a
+WHERE s.studentid=sc.studentid
+AND c.countryid=s.countryid
+AND sc.participat='Yes' 
+AND a.year between @startyear AND @endyear
+)</CommandText>
+        <DataSourceName>usttiConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="country_participat">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>country_participat</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="country_report_dataset_countryparticipateDataTable6">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>country_report_dataset</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>countryparticipateDataTable6TableAdapter</rd:TableAdapterName>
+        <rd:TableName>countryparticipateDataTable6</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT distinct top 40 c.countryname as country_participat
+FROM student s,studentcourse sc,country c,application a
+WHERE s.studentid=sc.studentid
+AND c.countryid=s.countryid
+AND sc.participat='Yes' 
+AND a.year between @startyear AND @endyear
+AND countryname NOT IN
+ (
+SELECT distinct top 200 c.countryname as country_participat
+FROM student s,studentcourse sc,country c,application a
+WHERE s.studentid=sc.studentid
+AND c.countryid=s.countryid
+AND sc.participat='Yes' 
+AND a.year between @startyear AND @endyear
+)</CommandText>
+        <DataSourceName>usttiConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="country_participat">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>country_participat</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="country_report_dataset_TotalCountryParticipant">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>country_report_dataset</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>TotalCountryParticipantTableAdapter</rd:TableAdapterName>
+        <rd:TableName>TotalCountryParticipant</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT count (distinct c.countryname) as country_participat,@startyear as startyear,@endyear as endyear
+FROM student s,studentcourse sc,country c,application a
+WHERE s.studentid=sc.studentid
+AND c.countryid=s.countryid
+AND sc.participat='Yes' 
+AND a.year between @startyear AND @endyear</CommandText>
+        <DataSourceName>usttiConnectionString</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="country_participat">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>country_participat</DataField>
+        </Field>
+        <Field Name="startyear">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>startyear</DataField>
+        </Field>
+        <Field Name="endyear">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>endyear</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Code />
+  <Width>190mm</Width>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <Language>en-US</Language>
+  <PageFooter>
+    <ReportItems>
+      <Textbox Name="textbox2">
+        <Left>5.25in</Left>
+        <rd:DefaultName>textbox2</rd:DefaultName>
+        <Width>2in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontSize>12pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>="Page "+Globals!PageNumber.ToString() +" of "+Globals!TotalPages.ToString() +" Pages"</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>7.5mm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+  </PageFooter>
+  <TopMargin>7.5mm</TopMargin>
+  <PageHeight>297mm</PageHeight>
+</Report>

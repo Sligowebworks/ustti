@@ -1,0 +1,124 @@
+Visual FoxPro 	 
+Accessing a Visual FoxPro Data Source
+
+You can use a connection string to access a Visual FoxPro data source. A valid connection string specifies the OLE DB Provider and the data source.
+
+For example, to connect to the TasTrade data source, you could use any of the following strings.
+
+To Access a Visual FoxPro data source in Visual Basic
+
+    * Specify the Visual FoxPro OLE DB Provider and the data source as in the following code:
+
+oConnection.Open("Provider=vfpoledb.1;Data Source=.\TasTrade.dbc")
+
+To Access a Visual FoxPro data source in Visual C++
+
+    * Set the database properties, specifying the DBSetProp array, DBProp array, and the IDBProperties pointer, followed by code which specifies the Visual FoxPro OLE DB Provider:
+
+HRESULT hr;
+CLSID clsid;     
+//set the DBProp array 
+
+DBPROP iProp[1];
+DBPROPSET rgIP;
+IDBProperties* pIDBProperties = NULL;
+IDBInitialize *pIDBInitialize = NULL;
+
+VariantInit(&iProp[0].vValue);
+iProp[0].dwOptions = DBPROPOPTIONS_OPTIONAL;      // REQUIRED;
+iProp[0].colid = DB_NULLID;
+//set the location of the datasource 
+
+iProp[0].dwPropertyID = DBPROP_INIT_DATASOURCE;
+iProp[0].vValue.vt = VT_BSTR;
+iProp[0].vValue.bstrVal = L"c:\TasTrade.dbc";   // the data source
+//set DBpropset to point to the DBPROP array 
+
+rgIP.guidPropertySet = DBPROPSET_DBINIT;
+rgIP.cProperties = 1;
+rgIP.rgProperties = iProp;
+
+::CoInitialize(NULL);
+
+hr = CLSIDFromProgID(L"vfpoledb.1",&clsid);   // the OLE DB Provider
+hr = CoCreateInstance(clsid,
+       NULL,
+       CLSCTX_INPROC_SERVER,
+       IID_IDBInitialize,
+       (void**)&pIDBInitialize);
+
+// to initialize 
+hr = piDBInitialize->QueryInterface(_uuidof(IDBProperties), (void**)&pIDBProperties);
+hr = pIDBProperties->SetProperties(1 , &rgIP) ;
+hr = pIDBProperties->Release();
+hr = pIDBInitialize->Initialize();
+
+To Access a Visual FoxPro data source in Visual C#
+
+    * Use the following code to specify the Visual FoxPro OLE DB Provider and to access the data source:
+
+OleDbConnection oleDbConnection1 = new   OleDbConnection("Provider=VFPOLEDB.1;"+
+     "Data Source=C:\\TasTrade.DBC;");
+oleDbConnection1.Open();
+
+
+OleDbConnection oleDbConnection1 = new OleDbConnection();
+oleDbConnection1.ConnectionString = "Provider=VFPOLEDB.1;" + 
+      "Data Source=C:\\TasTrade.DBC;";
+oleDbConnection1.Open();
+
+To Access a Visual FoxPro data source in ASP
+
+   1. Create an ASP page with appropriate HTML tags.
+   2. Add Visual Basic Scripting Language (VBScript) code to establish a connection, execute commands, and so on using ADO:
+
+<%
+    Set conn = Server.CreateObject("ADODB.Connection")
+    conn.mode = 16
+    conn.ConnectionString="Provider=VFPOLEDB.1;Data
+        Source=d:\vfp7\samples\data\testdata.dbc"
+    conn.Open
+   'sql = "select * from customer"
+    Set rsArrival = conn.Execute(sql)
+%>
+
+To Access a Visual FoxPro data source in JScript
+
+// VFP OLE DB Provider Jscript Sample
+var vbOKCancel = 0;
+var vbInformation = 64;
+var vbCancel = 2;
+var L_Welcome_MsgBox_Message_Text = "This script demonstrates how to access VFP OLE DB Provider using the Windows Scripting Host.";
+var L_Welcome_MsgBox_Title_Text   = "VFP OLE DB Provider JScript Sample";
+var sBuffer = "";
+
+var sConnString = "Provider=vfpoledb.1;Data Source=d:\\vfp7\\Samples\\data\\testdata.dbc";
+var oConn = new ActiveXObject("ADODB.Connection");
+var oRS    = new ActiveXObject("ADODB.Recordset");
+
+oConn.Open(sConnString);
+oRS.Open("select * from customer where cust_id='CACTU'",oConn,3,3);
+
+// Get customer.company
+sBuffer = oRS.Fields('Company').value;
+
+var WSHShell = WScript.CreateObject("WScript.Shell");
+var intDoIt;
+intDoIt =  WSHShell.Popup(sBuffer,
+   0,
+   L_Welcome_MsgBox_Title_Text,
+   vbOKCancel );
+   if (intDoIt == vbOKCancel) {
+      oRS.Close();
+      oConn.Close();
+      WScript.Quit();
+   }
+
+You can include the following attribute keywords and values in a connection string:
+
+Provider
+    VFPOLEDB
+Data Source=cPath
+    Specifies the path to the Visual FoxPro database or folder containing free tables. For example, d:\vfp7\samples\data\testdata.dbc
+Mode=cMode
+    Specifies one of the following: Read, ReadWrite, Share Deny None (default), Share Deny Read, Share Deny Write, Share Exclusive (inclusive of the previous two modes). 

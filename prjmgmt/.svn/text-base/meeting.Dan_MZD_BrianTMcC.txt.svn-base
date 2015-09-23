@@ -1,0 +1,74 @@
+2:03 PM 12/21/2006
+
+pre-meeting:
+
+project status.
+agreement of priority and bug fixes re quired for migration sorted out in file, "MZD Updated punchlist - USTTI.xls"
+
+Migration plan not made.
+
+
+AGENDA:
+
+Affirm punchlist
+
+discuss migration needs
+
+Agree on timing
+
+
+~`,~`,~`,~`,~`,~`,~`,
+USTTI closed until Second.
+
+can reach him at ustti email or bmcclosky@gmail.com
+202-441-6866
+
+Will be in colorado.
+
+January 15th is goal for final migration
+With time for brian et al to run tests, learn interface.
+
+Brian will email spreadsheets for import of 2007 data.
+
+Bio Page, not for a couple months
+Bio Sheet: contact info and full history
+Bio Page: short page of contact info.
+Short version is missing and should be default choice.
+
+Low priority: multiple bio page (long and short) for example, all in an orientation.
+Excel is prefered when printing out report.
+PDF's are used when sending 
+
+Ad-hoc report is where we do historys for board members, how many applicants have applied to a course.
+Search by gender is not present.
+
+Current format is csv
+Bio-Info Merge
+Label (Avery 51x63) used for catalog print direct to printer.  Excel, to Word Template is preferable.
+Short Bio-info
+
+Ad-Hoc Report
+Region, year, app-status, course, orientation, eligable/ ineligible (countries by State Dpt) for training)
+eligible/ineligible for funding
+
+Missing from php ad-hoc report.
+Existing constraints are not populated when going back to form
+allow: course number with or without the hyphen.
+app-status,
+Region
+Funding
+**multiple values
+Year Range
+**paging
+
+
+That before the end of January you will be entering many many applications,
+and pulling list to send to instructors (bio-info merge).
+
+Item 16 (in excel)  course_student_data.aspx
+linkify lname, fname with stident ID and jump to student info page.
+
+Item 18 Course by sponsor report – total net country and participant tally
+to total tally line, add missing number of distinct countries
+Also insure students are counted not applications or student, participant tuple.
+

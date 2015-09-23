@@ -1,0 +1,76 @@
+ * {
+	margin:0;
+	padding:0;
+}
+ body {
+ 	background-color:#DDDDDD;
+ 	padding:10px;
+ }
+.RemoveConstrLink {
+ white-space: nowrap;
+ }
+.Logo {
+	position: relative;
+	float: left;
+}
+.imgLink {
+	border:none;
+	vertical-align:text-top;
+}
+ .LogoBanner {
+ 	width:100%;
+ 	height: 135px;
+ 	Background-color: #FFFFFF;
+ 	text-align:center;
+}
+.DisplayPanel {
+	text-align: left;
+}
+ .Table , Table{
+ 	margin:0px;
+ 	padding:3px;
+ 	border-width:3px;
+ 	border-style:ridge;
+ 	border-color:navy;
+ }
+ .Row, TR {
+ 	margin:3px;
+ 	padding:3px;
+ 	
+ }	
+ .Cell, .InputCell, .FormLabel {
+ 	text-align: center;
+ 	margin:3px;
+ 	padding:10px;
+ 	border-style:solid;
+ 	border-width:1px;
+ 	border-color:#EEEEEE;
+ }
+ .InputCell {
+ 	text-align: left;
+ }
+ .FormLabel {
+ 	text-align:right;
+ }
+ .TableHeader {
+ 	margin:0px;
+ 	padding:3px;
+ 	border-width:2px;
+ 	border-style:ridge;
+ 	border-color:purple;
+ }
+ .FormTitle, .PageTitle {
+ 	color: blue;
+ 	font-size: 2em;
+ 	text-align: left;
+ }
+ .Form {
+ 	text-align: center;
+ }
+ .textinput {
+ 	vertical-align: top;
+ }
+ .error {
+	 color: red;
+	 text-align: center;
+ }

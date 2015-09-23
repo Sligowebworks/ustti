@@ -1,0 +1,146 @@
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'March 23, 2007'	, DATE( 2007, 3, 23),	DATE( 2007, 3, 23),	687) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'March 30, 2007'	, DATE( 2007, 3, 30),	DATE( 2007, 3, 30),	688) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'April 3, 2007'	, DATE( 2007, 4, 3),	DATE( 2007, 4, 3),	689) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'April 6, 2007'	, DATE( 2007, 4, 6),	DATE( 2007, 4, 6),	690) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'April 6, 2007'	, DATE( 2007, 4, 6),	DATE( 2007, 4, 6),	690) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'April 6, 2007'	, DATE( 2007, 4, 6),	DATE( 2007, 4, 6),	690) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'April 6, 2007'	, DATE( 2007, 4, 6),	DATE( 2007, 4, 6),	690) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'April 20, 2007'	, DATE( 2007, 4, 20),	DATE( 2007, 4, 20),	691) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'April 20, 2007'	, DATE( 2007, 4, 20),	DATE( 2007, 4, 20),	691) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'April 27, 2007'	, DATE( 2007, 4, 27),	DATE( 2007, 4, 27),	692) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'May 1, 2007'	, DATE( 2007, 5, 1),	DATE( 2007, 5, 1),	693) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'May 3, 2007'	, DATE( 2007, 5, 3),	DATE( 2007, 5, 3),	694) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'May 4, 2007'	, DATE( 2007, 5, 4),	DATE( 2007, 5, 4),	695) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'May 8, 2007'	, DATE( 2007, 5, 8),	DATE( 2007, 5, 8),	696) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'May 24, 2007'	, DATE( 2007, 5, 24),	DATE( 2007, 5, 24),	697) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'May 25, 2007'	, DATE( 2007, 5, 25),	DATE( 2007, 5, 25),	698) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'June 1, 2007'	, DATE( 2007, 6, 1),	DATE( 2007, 6, 1),	699) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'June 8, 2007'	, DATE( 2007, 6, 8),	DATE( 2007, 6, 8),	700) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'June 8, 2007'	, DATE( 2007, 6, 8),	DATE( 2007, 6, 8),	700) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'June 11, 2007'	, DATE( 2007, 6, 11),	DATE( 2007, 6, 11),	701) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'June 15, 2007'	, DATE( 2007, 6, 15),	DATE( 2007, 6, 15),	702) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'June 19, 2007'	, DATE( 2007, 6, 19),	DATE( 2007, 6, 19),	703) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'June 22, 2007'	, DATE( 2007, 6, 22),	DATE( 2007, 6, 22),	704) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'June 22, 2007'	, DATE( 2007, 6, 22),	DATE( 2007, 6, 22),	704) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'July 6, 2007'	, DATE( 2007, 7, 6),	DATE( 2007, 7, 6),	705) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'July 6, 2007'	, DATE( 2007, 7, 6),	DATE( 2007, 7, 6),	705) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'July 9, 2007'	, DATE( 2007, 7, 9),	DATE( 2007, 7, 9),	706) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'July 10, 2007'	, DATE( 2007, 7, 10),	DATE( 2007, 7, 10),	707) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'July 10, 2007'	, DATE( 2007, 7, 10),	DATE( 2007, 7, 10),	707) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'July 12, 2007'	, DATE( 2007, 7, 12),	DATE( 2007, 7, 12),	708) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'July 13, 2007'	, DATE( 2007, 7, 13),	DATE( 2007, 7, 13),	709) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'July 17, 2007'	, DATE( 2007, 7, 17),	DATE( 2007, 7, 17),	710) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'July 19, 2007'	, DATE( 2007, 7, 19),	DATE( 2007, 7, 19),	711) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'July 20, 2007'	, DATE( 2007, 7, 20),	DATE( 2007, 7, 20),	712) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'July 27, 2007'	, DATE( 2007, 7, 27),	DATE( 2007, 7, 27),	713) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'July 27, 2007'	, DATE( 2007, 7, 27),	DATE( 2007, 7, 27),	713) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'July 27, 2007'	, DATE( 2007, 7, 27),	DATE( 2007, 7, 27),	713) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'July 30, 2007'	, DATE( 2007, 7, 30),	DATE( 2007, 7, 30),	714) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'August 1, 2007'	, DATE( 2007, 8, 1),	DATE( 2007, 8, 1),	715) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'August 3, 2007'	, DATE( 2007, 8, 3),	DATE( 2007, 8, 3),	716) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'August 7, 2007'	, DATE( 2007, 8, 7),	DATE( 2007, 8, 7),	717) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'August 8, 2007'	, DATE( 2007, 8, 8),	DATE( 2007, 8, 8),	718) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'August 9, 2007'	, DATE( 2007, 8, 9),	DATE( 2007, 8, 9),	719) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'August 10, 2007'	, DATE( 2007, 8, 10),	DATE( 2007, 8, 10),	720) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'August 17, 2007'	, DATE( 2007, 8, 17),	DATE( 2007, 8, 17),	721) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'September 7, 2007'	, DATE( 2007, 9, 7),	DATE( 2007, 9, 7),	722) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'September 7, 2007'	, DATE( 2007, 9, 7),	DATE( 2007, 9, 7),	722) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'September 7, 2007'	, DATE( 2007, 9, 7),	DATE( 2007, 9, 7),	722) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'September 7, 2007'	, DATE( 2007, 9, 7),	DATE( 2007, 9, 7),	722) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'September 18, 2007'	, DATE( 2007, 9, 18),	DATE( 2007, 9, 18),	723) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'September 19, 2007'	, DATE( 2007, 9, 19),	DATE( 2007, 9, 19),	724) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'September 20, 2007'	, DATE( 2007, 9, 20),	DATE( 2007, 9, 20),	725) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'September 20, 2007'	, DATE( 2007, 9, 20),	DATE( 2007, 9, 20),	725) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'September 21, 2007'	, DATE( 2007, 9, 21),	DATE( 2007, 9, 21),	726) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'September 24, 2007'	, DATE( 2007, 9, 24),	DATE( 2007, 9, 24),	727) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'September 24, 2007'	, DATE( 2007, 9, 24),	DATE( 2007, 9, 24),	727) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'September 26, 2007'	, DATE( 2007, 9, 26),	DATE( 2007, 9, 26),	728) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'September 28, 2007'	, DATE( 2007, 9, 28),	DATE( 2007, 9, 28),	729) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'September 28, 2007'	, DATE( 2007, 9, 28),	DATE( 2007, 9, 28),	729) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'October 4, 2007'	, DATE( 2007, 10, 4),	DATE( 2007, 10, 4),	730) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'October 5, 2007'	, DATE( 2007, 10, 5),	DATE( 2007, 10, 5),	731) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'October 5, 2007'	, DATE( 2007, 10, 5),	DATE( 2007, 10, 5),	731) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'October 9, 2007'	, DATE( 2007, 10, 9),	DATE( 2007, 10, 9),	732) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'October 10, 2007'	, DATE( 2007, 10, 10),	DATE( 2007, 10, 10),	733) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'October 12, 2007'	, DATE( 2007, 10, 12),	DATE( 2007, 10, 12),	734) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'October 15, 2007'	, DATE( 2007, 10, 15),	DATE( 2007, 10, 15),	735) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'October 17, 2007'	, DATE( 2007, 10, 17),	DATE( 2007, 10, 17),	736) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'October 17, 2007'	, DATE( 2007, 10, 17),	DATE( 2007, 10, 17),	736) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'October 19, 2007'	, DATE( 2007, 10, 19),	DATE( 2007, 10, 19),	737) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'October 24, 2007'	, DATE( 2007, 10, 24),	DATE( 2007, 10, 24),	738) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'October 24, 2007'	, DATE( 2007, 10, 24),	DATE( 2007, 10, 24),	738) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'October 26, 2007'	, DATE( 2007, 10, 26),	DATE( 2007, 10, 26),	739) ;
+INSERT INTO orient ( year, daterange, from, to, orientkey) VALUES( 
+ '2007', 	'November 2, 2007'	, DATE( 2007, 11, 2),	DATE( 2007, 11, 2),	740) ;

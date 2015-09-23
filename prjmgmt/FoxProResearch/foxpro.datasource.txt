@@ -1,0 +1,6 @@
+"foxpro data sources - Google Search":http://www.google.com/search?q=foxpro+data+sources&sourceid=mozilla-search&start=0&start=0&ie=utf-8&oe=utf-8&client=firefox-a&rls=org.mozilla:en-US:official
+
+"Visual FoxPro Data Access Using the OLE DB Provider":http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dv_foxhelp/html/fotskaccessingvisualfoxprodatainvisualstudionet.asp
+
+"Connecting to dBASE/FoxPro Databases":http://livedocs.macromedia.com/coldfusion/5.0/Advanced_ColdFusion_Administration/datasources_ADV_MJS6.htm
+
